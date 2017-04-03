@@ -1,0 +1,43 @@
+[
+    {
+    "id": "14068863",
+    "artist_id": "273221",
+    "url": "http://www.bandsintown.com/event/14068863?app_id=oddjob_test&artist=Oddjob&came_from=67",
+    "datetime": "2017-05-05T21:00:00",
+    "venue": {
+      "name": "USF Verftet",
+      "latitude": "60.3955789",
+      "longitude": "5.3089979",
+      "city": "Bergen",
+      "region": "07",
+      "country": "Norway"
+    },
+    "offers": [
+                ],
+    "lineup": [
+                    "Oddjob"
+                    ]
+  },    {
+    "id": "14275151",
+    "artist_id": "273221",
+    "url": "http://www.bandsintown.com/event/14275151?app_id=oddjob_test&artist=Oddjob&came_from=67",
+    "datetime": "2017-08-23T19:00:00",
+    "venue": {
+      "name": "Parksn\u00E4ckan i Uppsala Stadstr\u00E4dg\u00E5rd",
+      "latitude": "59.8513",
+      "longitude": "17.6444",
+      "city": "Uppsala",
+      "region": "",
+      "country": "Sweden"
+    },
+    "offers": [
+            {
+        "type": "Tickets",
+        "url": "http://www.bandsintown.com/event/14275151/buy_tickets?app_id=oddjob_test&artist=Oddjob&came_from=67",
+        "status": "available"
+      }
+                        ],
+    "lineup": [
+                    "Oddjob"
+                    ]
+  }  ]
