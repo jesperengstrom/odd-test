@@ -1,0 +1,25 @@
+#player-section {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: black; }
+
+#waveform {
+  min-width: 50%;
+  max-width: 50%;
+  border: 2px solid white; }
+
+#playing-info {
+  background: lightslategray; }
+
+#playing-info li {
+  list-style-type: none;
+  padding: 0 1rem; }
