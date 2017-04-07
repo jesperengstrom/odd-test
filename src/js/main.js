@@ -114,3 +114,12 @@
     }
 
 })();
+
+fetch("/audio/").then(function(response) {
+    console.log(response);
+    return response.text();
+}).then(function(text) {
+    console.log(text);
+    list = text.querySelectorAll("li");
+    console.log(list);
+});
