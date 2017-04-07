@@ -43,17 +43,19 @@
 
 (function() {
     var playlist = [
-        { title: "boom", album: "boom-shak", year: 2008, src: "audio/boom.wav" },
-        { title: "clap", album: "clap-shak", year: 2001, src: "audio/clap.wav" },
-        { title: "openhat", album: "openhat-shak", year: 1999, src: "audio/openhat.wav" }
+        { title: "Somethin", album: "Foreevernevermore", year: 2000, src: "audio/656591004.mp3" },
+        { title: "Somethin else", album: "Foreevernevermore", year: 2000, src: "audio/900257259.mp3" },
+        { title: "yeee", album: "Foreevernevermore", year: 2000, src: "/audio/2206372333.mp3" }
     ];
 
     var nowPlaying = 0;
 
     var oddPlayer = WaveSurfer.create({
         container: '#waveform',
-        waveColor: 'white',
-        barWidth: 5,
+        waveColor: 'green',
+        hideScrollbar: true,
+        height: 50,
+        barWidth: 3,
         cursorColor: "orange",
         cursorWidth: 3,
         progressColor: 'grey'
@@ -77,6 +79,15 @@
 
 
     function loadNew() {
+        let progress = "";
+        oddPlayer.on('loading', function(percents) {
+            progress = document.querySelector("#progress");
+            progress.value = percents;
+        });
+        oddPlayer.on('ready', function() {
+            progress.style.display = "none";
+        });
+
         oddPlayer.load(this.src);
         printMeta.call(this);
     }
@@ -114,12 +125,3 @@
     }
 
 })();
-
-fetch("/audio/").then(function(response) {
-    console.log(response);
-    return response.text();
-}).then(function(text) {
-    console.log(text);
-    list = text.querySelectorAll("li");
-    console.log(list);
-});

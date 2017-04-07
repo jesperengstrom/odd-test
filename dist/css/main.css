@@ -1,25 +1,28 @@
 #player-section {
+  box-sizing: border-box;
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
-  padding: 1rem 2rem;
+  max-height: 20%;
+  padding: 1rem 1rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: black; }
+  border-top: 2px solid green; }
 
 #waveform {
   min-width: 50%;
-  max-width: 50%;
-  border: 2px solid white; }
+  max-width: 50%; }
 
-#playing-info {
-  background: lightslategray; }
+#progress {
+  width: 100%;
+  opacity: 0.5; }
 
 #playing-info li {
   list-style-type: none;
-  padding: 0 1rem; }
+  font-size: 0.75rem;
+  color: green; }
